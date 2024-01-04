@@ -1,0 +1,55 @@
+<div class="container mt-3 py-2 py-md-4">
+  <div class="row justify-content-md-start justify-content-center align-items-center g-2 text-center">
+    <div class="col">logo</div>
+
+    <div class="col   d-none d-md-flex  justify-content-start  ">
+      <form (ngSubmit)="onSearch() ">
+        <div class="input-group align-self-stretch">
+          <!-- Search input -->
+          <input type="text" class="form-control " 
+          placeholder="Search..." [(ngModel)]="searchTerm" name="searchTerm">
+         
+          <!-- Category dropdown -->
+          <div class="input-group-append align-self-stretch" >
+            <select class="form-select form-select-lg "  [(ngModel)]="selectedCategory"  name="selectedCategory" aria-label="Large select example">
+              <option selected>Open this select menu</option>
+              <option value="all">All Categories</option>
+              <option value="category1">Category 1</option>
+              <option value="category2">Category 2</option>
+            </select>
+
+            <!-- <select class="custom-select" [(ngModel)]="selectedCategory"  name="selectedCategory">
+              <option value="all">All Categories</option>
+              <option value="category1">Category 1</option>
+              <option value="category2">Category 2</option>
+             Add more categories as needed 
+            </select>-->
+          </div>
+    
+          <!-- Search button icon -->
+          <div class="input-group-append text-center">
+            <button type="submit" class="btn btn-outline-secondary mt-1" aria-label="Search">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="col wishlist-cart-icons">
+    <!-- Wishlist icon -->
+    <button type="button" class="btn btn-outline-secondary" aria-label="Wishlist">
+      <i class="fa fa-heart"></i>
+    </button>
+
+    <!-- Cart icon -->
+    <button type="button" class="btn btn-outline-secondary" aria-label="Cart">
+      <i class="fa fa-shopping-cart"></i>
+    </button>
+  </div>
+
+
+
+  </div>
+  
+</div>

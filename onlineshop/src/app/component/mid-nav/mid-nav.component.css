@@ -1,0 +1,12 @@
+.search-container {
+    border: 1px solid red; /* Bootstrap default border color */
+    border-radius: 0.25rem; /* Bootstrap default border radius */
+  }
+  
+  .search-container.border-danger {
+    border-color: red;
+  }
+  .wishlist-cart-icons {
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
