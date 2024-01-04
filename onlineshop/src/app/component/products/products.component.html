@@ -1,0 +1,29 @@
+<p>products works!</p>
+<!-- product-list.component.html -->
+<!-- product-list.component.html -->
+<div>
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Search for a product" />
+</div>
+ @if (isSearch) 
+ {
+    <ul>
+    @for (product of filteredProducts; track product.id)
+    {
+        {{ product.name }} - Price: {{ product.price }}
+    }
+    </ul>
+}
+     
+
+
+  <div>
+    <input [(ngModel)]="sentCatID"  placeholder="enter your phone" type="number">
+    <input type="button" value="getby cat" (click)="getelemByCat()">
+  </div>
+
+@for (product of prdListOfCat; track product.id)
+{
+ {{product.name}}
+}
+
+
